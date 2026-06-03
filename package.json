@@ -26,12 +26,12 @@
 		"zod": "^3.24.4",
 		"qrcode.react": "latest",
 		"lucide-react": "^0.383.0",
-		"hono": "^4.12.9",
+		"hono": "^4.12.23",
 		"tailwindcss": "^4.2.2",
 		"react-dom": "^19.2.4"
 	},
 	"devDependencies": {
-		"@cloudflare/vite-plugin": "^1.31.0",
+		"@cloudflare/vite-plugin": "^1.39.2",
 		"@faker-js/faker": "^10.4.0",
 		"@types/node": "^22.0.0",
 		"@types/cloudflare-turnstile": "^0.2.2",
@@ -44,6 +44,6 @@
 		"drizzle-kit": "^0.31.10",
 		"tsx": "^4.21.0",
 		"vitest": "~3.2.0",
-		"wrangler": "^4.80.0"
+		"wrangler": "^4.97.0"
 	}
 }
