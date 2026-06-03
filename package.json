@@ -16,7 +16,6 @@
 		"test": "vitest"
 	},
 	"dependencies": {
-		"@marsidev/react-turnstile": "^1.5.0",
 		"@tailwindcss/vite": "^4.2.2",
 		"@hono/zod-validator": "^0.7.6",
 		"react": "^19.2.4",
@@ -34,7 +33,6 @@
 		"@cloudflare/vite-plugin": "^1.39.2",
 		"@faker-js/faker": "^10.4.0",
 		"@types/node": "^22.0.0",
-		"@types/cloudflare-turnstile": "^0.2.2",
 		"@types/telegram-web-app": "^9.5.0",
 		"@types/react": "^19.2.14",
 		"@types/react-dom": "^19.2.3",
