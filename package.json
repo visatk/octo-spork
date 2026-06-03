@@ -1,0 +1,49 @@
+{
+	"name": "parak",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "npm run build && vite preview",
+		"deploy": "npm run cf-typegen && npm run build && wrangler deploy",
+		"cf-typegen": "wrangler types",
+		"db:generate": "drizzle-kit generate",
+		"db:migrate:local": "wrangler d1 migrations apply visatk-shop --local",
+		"db:migrate:remote": "wrangler d1 migrations apply visatk --remote",
+		"db:studio": "drizzle-kit studio",
+		"test": "vitest"
+	},
+	"dependencies": {
+		"@marsidev/react-turnstile": "^1.5.0",
+		"@tailwindcss/vite": "^4.2.2",
+		"@hono/zod-validator": "^0.7.6",
+		"react": "^19.2.4",
+		"react-router-dom": "^7.14.0",
+		"drizzle-orm": "^0.45.2",
+		"dotenv": "^17.4.0",
+		"zod": "^3.24.4",
+		"qrcode.react": "latest",
+		"lucide-react": "^0.383.0",
+		"hono": "^4.12.9",
+		"tailwindcss": "^4.2.2",
+		"react-dom": "^19.2.4"
+	},
+	"devDependencies": {
+		"@cloudflare/vite-plugin": "^1.31.0",
+		"@faker-js/faker": "^10.4.0",
+		"@types/node": "^22.0.0",
+		"@types/cloudflare-turnstile": "^0.2.2",
+		"@types/telegram-web-app": "^9.5.0",
+		"@types/react": "^19.2.14",
+		"@types/react-dom": "^19.2.3",
+		"@vitejs/plugin-react": "^6.0.1",
+		"typescript": "^6.0.2",
+		"vite": "^8.0.3",
+		"drizzle-kit": "^0.31.10",
+		"tsx": "^4.21.0",
+		"vitest": "~3.2.0",
+		"wrangler": "^4.80.0"
+	}
+}
